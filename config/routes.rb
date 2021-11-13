@@ -8,4 +8,5 @@ Rails.application.routes.draw do
     resource :favorites, only: [:create, :destroy]
     # showページ不要でidの受け渡し不要のためidをリクエストに含めないresource
   end
+  resources :users,only:[:show, :edit, :update]
 end
